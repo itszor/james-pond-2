@@ -10,7 +10,7 @@ GEN     := $(wildcard gen/code*.c) gen/entries.c
 GENMODES := $(wildcard genmodes/code*.c) genmodes/entries.c
 GENPROT := $(wildcard genprotect/code*.c) genprotect/entries.c
 OBJ     := $(GEN:.c=.o) $(GENMODES:.c=.o) $(GENPROT:.c=.o) game.o
-LIBS    := $(shell pkg-config --libs sdl3) -lm -lpthread
+LIBS    := $(shell pkg-config --libs sdl3) -ljpeg -lm -lpthread
 INC     := -I$(ROGER)/include
 
 robocod: $(OBJ) $(ROGER)/libroger.a
