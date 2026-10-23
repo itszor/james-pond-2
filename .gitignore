@@ -1,0 +1,37 @@
+# Python / editors
+__pycache__/
+*.pyc
+*.swp
+
+# The original game and everything made from it stay out of the
+# repository: build.sh (recipe.json) remakes them from the user's own copy.
+*.zip
+*.adf
+*.hfe
+extracted/
+game/
+unpacked/
+analysis/*.json
+analysis/*.dis
+
+# Recompilation: generated C, objects, binaries, run outputs
+recomp/gen/
+recomp/genmodes/
+recomp/genload/
+recomp/genmus/
+recomp/genprotect/
+recomp/*.o
+recomp/robocod
+recomp/*.events
+recomp/*.vdu
+recomp/*.screen
+recomp/*.regs
+recomp/*.bmp
+recomp/*.png
+recomp/*.wav
+recomp/vidc.log
+recomp/untranslated.log
+recomp/savedata/
+
+# a personal launcher (window, shader, pad)
+recomp/go.sh
